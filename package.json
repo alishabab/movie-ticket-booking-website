@@ -1,0 +1,23 @@
+{
+  "name": "html-css-capstone",
+  "version": "1.0.0",
+  "description": "Online movie ticket booking",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alishabab/HTML-CSS-Capstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alishabab/HTML-CSS-Capstone/issues"
+  },
+  "homepage": "https://github.com/alishabab/HTML-CSS-Capstone#readme",
+  "dependencies": {
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
