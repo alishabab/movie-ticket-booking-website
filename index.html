@@ -18,23 +18,25 @@
         <div class="left-nav">
         <a href="index.html"><img src="./images/logo-name.png" alt="logo" class="nav-item logo logo-nav"></a>
         <div class="nav-item">
-        <a href="#"><i class="fas fa-map-marker-alt"></i> New Delhi</a>
-        <span class="search">
-          <input type="text" placeholder="Search for movies" class="search-input"> <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
-        </span>
-       
+        <a href="#" class="current-loc"><i class="fas fa-map-marker-alt"></i> New Delhi</a>
         <select class="nav-item locations">
-          <option value="" disabled selected>Select location</option>
+          <option value="" disabled selected>Change location</option>
           <option value="Delhi">Delhi</option>
           <option value="Mumbai">Mumbai</option>
           <option value="Hyderabad">Hyderabad</option>
           <option value="Chennai">Chennai</option>
         </select>
+        <span class="search">
+          <input type="text" placeholder="Search for movies" class="search-input"> <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+        </span>
+       
+       
         <a href="bookings.html" class="nav-link">Book Tickets</a>
       </div>
     </div>
         <div>
-          <a href="#" class="nav-item nav-btn"><i class="fas fa-user"></i> Sign In</a>
+          <a href="#" class="nav-item nav-btn"><i class="fas fa-lock"></i> Sign In</a>
+          <a href="#" class="nav-item nav-btn register"><i class="fas fa-user-plus"></i> Register</a>
           <a href="#" class="nav-item"><i class="fas fa-bars"></i></a>
         </div>
       </div>
@@ -43,10 +45,27 @@
      
      
     </nav>
+
+    <nav>
+      <div class="bottom-nav">
+            <ul class="bottom-nav-list">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="bookings.html">Quick Bookings</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+      </div>
+    </nav>
   </header>
 
   <main>
+    <h2>Welcome to Moviekart <br>
+      Your one stop point to book movie tickets <i class="fas fa-ticket-alt"></i>
+    </h2>
+    <section>
 
+    </section>
   </main>
 
   <footer>
@@ -59,13 +78,14 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-tumblr"></i></a>
       </div>
-      <p>© Moviekart, 2020</p>
+     
       <div class="footer-links">
         <a href="./index.html">Home</a>
         <a href="/about.html">About US</a>
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
       </div>
+      <small>© Moviekart, 2020 <em>All rights reserved</em></small>
     </div>
   </footer>
 </body>

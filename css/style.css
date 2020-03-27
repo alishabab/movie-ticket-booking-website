@@ -2,10 +2,16 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
@@ -51,6 +57,11 @@ body {
   width: 60px;
 }
 
+.current-loc {
+  box-shadow: inset 0 -1px #ec5242;
+
+}
+
 .search {
   position: relative;
 }
@@ -70,6 +81,7 @@ body {
 
 .locations {
   border: 1px solid #d3d3d3;
+  border: o;
   border-radius: 5px;
   padding: 5px 3px;
 }
@@ -85,6 +97,21 @@ body {
   padding: 5px 3px;
 }
 
+.bottom-nav {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+}
+
+.active {
+  border-bottom: 3px solid #ec5242;
+  color: #ec5242;
+}
+
+.bottom-nav-list .active a {
+  color: #ec5242;
+}
+
 /* Working on footer */
 
 .footer {
@@ -98,14 +125,78 @@ body {
   font-size: 22px;
 }
 
+/* Responsiveness */
+.locations {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.register {
+  display: none;
+}
+
+
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
-  .locations {
+@media only screen and (min-width: 768px) {
+
+
+  .fa-bars {
     display: none;
   }
 
-  .search {
-    display: none;
+  .register {
+    display: inline-block;
+  } 
+  .locations {
+    display: inline-block;
+    margin-left: 10px;
   }
+  
+  .search {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .search-input {
+    padding-left: 10px;
+  }
+
+  .current-loc {
+    margin-left: 10px;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+
+  .bottom-nav-list {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
+  .bottom-nav-list li {
+    display: inline-block;
+    padding-top: 3px;
+    height: 30px;
+  }
+
+  .bottom-nav-list a {
+    color: white;
+  }
+
+  .bottom-nav-list a:hover {
+    color: #ec5242;
+  }
+
+  
+  
 }
