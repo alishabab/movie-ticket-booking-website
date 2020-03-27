@@ -18,6 +18,10 @@ ul {
   padding: 0;
 }
 
+a:hover {
+  color: #ec5242 !important;
+}
+
 /* Working on header */
 
 .navbar {
@@ -39,10 +43,6 @@ ul {
 .navbar a {
   /* color: #272a31; */
   color: #d3d3d3;
-}
-
-.navbar a:hover {
-  color: #ec5242
 }
 
 .nav-item {
@@ -113,18 +113,6 @@ ul {
   color: #ec5242;
 }
 
-/* Working on footer */
-
-.footer {
-  text-align: center;
-  background-color: #272a31;
-  color: #d3d3d3;
-}
-
-.footer-social a {
-  color: #d3d3d3;
-  font-size: 22px;
-}
 
 /* Working on main */
 
@@ -238,8 +226,8 @@ box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
 }
 
 .float-absolute-bottom:hover {
-  background-color: #d3d3d3;
-  opacity: 0.9;
+  background-color: #272a31;
+  opacity: 1;
 }
 
 .float-absolute-bottom a {
@@ -271,10 +259,6 @@ box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
   font-weight: 600;
   font-size: 2rem;
   padding-bottom: 20px;
-}
-
-.heading-link:hover {
-  color: #ec5242;
 }
 
 .upcoming-section {
@@ -324,9 +308,25 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   box-shadow: inset 0 -1px #ec5242;
 }
 
-.see-more-link:hover {
-  color: #ec5242;
+
+/* Working on footer */
+
+.footer {
+  text-align: center;
+  background-color: #272a31;
+  color: #d3d3d3;
 }
+
+.footer-social a {
+  color: #d3d3d3;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.footer-links a {
+  color: #d3d3d3;
+}
+
 /* Responsiveness */
 
 .locations {
@@ -383,9 +383,7 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   .bottom-nav-list a {
     color: white;
   }
-  .bottom-nav-list a:hover {
-    color: #ec5242;
-  }
+  
   .showing-movie-poster {
     width: 49%;
   }
@@ -398,6 +396,30 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
 
   .upcoming-movie-poster {
     width: 24%;
+  }
+
+  .footer-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social {
+    order: 2;
+  }
+
+  .footer-social-wrapper .logo {
+    margin-left: 10px;
+     width: 90px;
+  }
+
+  .footer-social a {
+    font-size: 38px;
+    margin-right: 10px;
+  }
+
+  .footer-links a {
+    font-size: 18px;
   }
 }
 
