@@ -400,3 +400,9 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
     width: 24%;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .showing-movie-poster {
+    width: 32%;
+  }
+}
