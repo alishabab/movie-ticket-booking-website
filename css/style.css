@@ -373,8 +373,8 @@ a:hover {
 }
 .fa-circle {
   display: inline-block;
-  font-size: 10px;
-  /* padding-bottom: 5px; */
+  font-size: 8px;
+  padding-right: 5px;
 }
 
 .date-n-cinema * {
@@ -397,7 +397,15 @@ a:hover {
 }
 
 .type-submit {
-  /* margin: 5px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border: 1px solid #d3d3d3;
+  background-color: #d3d3d3;
+}
+
+.type-submit:hover {
+  background-color: #ec5242;
 }
 /* Responsiveness */
 
