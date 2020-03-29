@@ -125,22 +125,21 @@ a:hover {
   color: #ec5242;
 }
 
-
 /* Working on main */
 
 .text-center {
   text-align: center;
 }
 
-.now-showing-section {
+.main-section {
   width: 95%;
   margin: 0 auto;
   background-color: #d3d3d3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  -webkit-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
--moz-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
+  -webkit-box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
+  box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
   /* height: 600px; */
   /* background-color: #ec5242; */
 }
@@ -151,9 +150,10 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   padding-top: 10px;
   padding-bottom: 5px;
   font-size: 2.5rem;
-  -webkit-box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
--moz-box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
-box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
+  -webkit-box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
+  box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
+  /* background-color: white; */
 }
 
 .fa-compact-disc {
@@ -162,10 +162,10 @@ box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
 
 @keyframes rotation {
   from {
-      -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   to {
-      -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
   }
 }
 
@@ -267,22 +267,20 @@ box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.74);
 }
 
 .heading-link {
+  width: 100%;
   display: inline-block;
   color: #272a31;
   font-weight: 600;
   font-size: 2rem;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #272a31;
+  border-radius: 10px;
+  background-color: white;
 }
 
-.upcoming-section {
-  width: 95%;
-  margin: 0 auto;
-  background-color: #d3d3d3;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -webkit-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
--moz-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
-box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
+.heading-link i {
+  color: #ec5242;
 }
 
 .upcoming-movie {
@@ -321,7 +319,6 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   box-shadow: inset 0 -1px #ec5242;
 }
 
-
 /* Working on footer */
 
 .footer {
@@ -341,6 +338,67 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   color: #d3d3d3;
 }
 
+/* WORKING ON BOOKINGS PAGE */
+
+.heading-dash {
+  position: relative;
+  margin: 20px 0;
+}
+
+.heading-dash span {
+  position: absolute;
+  width: 30px;
+  border-bottom: 3px solid #ec5242;
+  bottom: -5px;
+  left: 48%;
+  
+}
+
+.booking-heading {
+  display: inline-block;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.booking-heading h4 {
+  padding: 10px 0;
+  border: 1px solid #272a31;
+  border-radius: 20px;
+}
+
+.booking-heading h4 span {
+  color: #ec5242;
+  padding-right: 20px;
+}
+.fa-circle {
+  display: inline-block;
+  font-size: 10px;
+  /* padding-bottom: 5px; */
+}
+
+.date-n-cinema * {
+  margin: 5px;
+}
+
+.input-date {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin: 5px; */
+}
+
+.pick-multiplex {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* margin: 5px; */
+
+}
+
+.type-submit {
+  /* margin: 5px; */
+}
 /* Responsiveness */
 
 .locations {
@@ -358,6 +416,19 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
 .register {
   display: none;
 }
+
+.date-n-cinema  {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #272a31;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+
 
 /* Media Queries */
 
@@ -397,7 +468,6 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
   .bottom-nav-list a {
     color: white;
   }
-  
   .showing-movie-poster {
     width: 49%;
   }
@@ -407,33 +477,39 @@ box-shadow: inset 0px 7px 5px -1px rgba(0,0,0,0.74);
     flex-wrap: wrap;
     /* justify-content: space-between; */
   }
-
   .upcoming-movie-poster {
     width: 24%;
   }
-
   .footer-social-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .footer-social {
     order: 2;
   }
-
   .footer-social-wrapper .logo {
     margin-left: 10px;
-     width: 90px;
+    width: 90px;
   }
-
   .footer-social a {
     font-size: 38px;
     margin-right: 10px;
   }
-
   .footer-links a {
     font-size: 18px;
+  }
+
+  .date-n-cinema {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .input-date {
+    width: 30%;
+  }
+
+  .pick-multiplex {
+    width: 30%;
   }
 }
 
