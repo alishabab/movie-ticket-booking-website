@@ -400,6 +400,17 @@ a:hover {
   background-color: #ec5242;
 }
 
+/* Working on about */
+
+.about-us-text p {
+  display: inline-block;
+  background-color: white;
+  margin: 20px 30px;
+  padding: 20px;
+  border: 1px solid #272a31;
+  border-radius: 10px;
+}
+
 /* Responsiveness */
 
 .register {
