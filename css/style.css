@@ -20,6 +20,8 @@ ul {
 }
 
 main {
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 90px;
 }
 
@@ -39,12 +41,10 @@ a:hover {
 .top-nav {
   width: 100%;
   height: 60px;
-  /* background-color: #d3d3d3; */
   background-color: #272a31;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 10px; */
 }
 
 .left-nav {
@@ -59,7 +59,6 @@ a:hover {
 
 .nav-item {
   color: #d3d3d3;
-  /* margin-left: 3px; */
 }
 
 .nav-link {
@@ -76,6 +75,7 @@ a:hover {
 
 .search {
   position: relative;
+  display: none;
 }
 
 .search-input {
@@ -96,6 +96,7 @@ a:hover {
   border: o;
   border-radius: 5px;
   padding: 5px 3px;
+  display: none;
 }
 
 .fa-bars {
@@ -114,11 +115,28 @@ a:hover {
   width: 100%;
   height: 30px;
   background-color: black;
+  display: none;
 }
 
 .active {
   border-bottom: 3px solid #ec5242;
   color: #ec5242;
+}
+
+.float-absolute-bottom a {
+  display: inline-block;
+  width: 100%;
+  color: #ec5242;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.footer-social a {
+  color: #d3d3d3;
+}
+
+.footer-links a {
+  color: #d3d3d3;
 }
 
 .bottom-nav-list .active a {
@@ -137,11 +155,9 @@ a:hover {
   background-color: #d3d3d3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  -webkit-box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
-  box-shadow: inset 0px 7px 5px -1px rgba(0, 0, 0, 0.74);
-  /* height: 600px; */
-  /* background-color: #ec5242; */
+  -webkit-box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74);
+  box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74);
 }
 
 .section-heading {
@@ -153,7 +169,6 @@ a:hover {
   -webkit-box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
   -moz-box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
   box-shadow: -1px 7px 5px -1px rgba(0, 0, 0, 0.74);
-  /* background-color: white; */
 }
 
 .fa-compact-disc {
@@ -164,6 +179,7 @@ a:hover {
   from {
     -webkit-transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
   }
@@ -171,9 +187,6 @@ a:hover {
 
 .now-showing-movie {
   width: 100%;
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap; */
 }
 
 .showing-movie-poster {
@@ -181,8 +194,6 @@ a:hover {
   margin-bottom: 10px;
   background-color: white;
   border-radius: 10px;
-  /* display: inline-block;
-  margin: 0 auto; */
 }
 
 .movie-img {
@@ -217,8 +228,9 @@ a:hover {
   0% {
     color: #d3d3d3;
   }
+
   100% {
-    color: #FF4136;
+    color: #ff4136;
   }
 }
 
@@ -234,8 +246,6 @@ a:hover {
   left: 0;
   bottom: 3px;
   border-bottom: 1px solid #272a31;
-  /* border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px ; */
 }
 
 .float-absolute-bottom:hover {
@@ -243,17 +253,8 @@ a:hover {
   opacity: 1;
 }
 
-.float-absolute-bottom a {
-  display: inline-block;
-  width: 100%;
-  color: #ec5242;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 .movie-detail {
   padding: 10px 0;
-  /* border: 1px solid #272a31; */
 }
 
 .movie-detail span {
@@ -300,7 +301,6 @@ a:hover {
 
 .upcoming-movie-img {
   width: 100%;
-  /* height: auto; */
   max-height: 300px;
 }
 
@@ -328,21 +328,15 @@ a:hover {
   color: #d3d3d3;
 }
 
-.footer-social a {
-  color: #d3d3d3;
-  font-size: 22px;
-  margin-right: 5px;
-}
-
-.footer-links a {
-  color: #d3d3d3;
-}
-
 /* WORKING ON BOOKINGS PAGE */
 
 .heading-dash {
   position: relative;
-  margin: 20px 0;
+  margin-bottom: 20px;
+}
+
+.fa-ticket-alt {
+  transform: rotate(-15deg);
 }
 
 .heading-dash span {
@@ -351,7 +345,6 @@ a:hover {
   border-bottom: 3px solid #ec5242;
   bottom: -5px;
   left: 48%;
-  
 }
 
 .booking-heading {
@@ -371,6 +364,7 @@ a:hover {
   color: #ec5242;
   padding-right: 20px;
 }
+
 .fa-circle {
   display: inline-block;
   font-size: 8px;
@@ -385,47 +379,34 @@ a:hover {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* margin: 5px; */
 }
 
 .pick-multiplex {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* margin: 5px; */
-
 }
 
 .type-submit {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   cursor: pointer;
   border: 1px solid #d3d3d3;
   background-color: #d3d3d3;
+  font-weight: 700;
 }
 
 .type-submit:hover {
   background-color: #ec5242;
 }
+
 /* Responsiveness */
-
-.locations {
-  display: none;
-}
-
-.search {
-  display: none;
-}
-
-.bottom-nav {
-  display: none;
-}
 
 .register {
   display: none;
 }
 
-.date-n-cinema  {
+.date-n-cinema {
   width: 90%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -436,74 +417,89 @@ a:hover {
   border-radius: 5px;
 }
 
-
-
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
   .fa-bars {
     display: none;
   }
+
   .register {
     display: inline-block;
   }
+
   .locations {
     display: inline-block;
     margin-left: 10px;
   }
+
   .search {
     display: inline-block;
     margin-left: 10px;
   }
+
   .search-input {
     padding-left: 10px;
   }
+
   .current-loc {
     margin-left: 10px;
   }
+
   .bottom-nav {
     display: block;
   }
+
   .bottom-nav-list {
     display: flex;
     justify-content: space-around;
   }
+
   .bottom-nav-list li {
     display: inline-block;
     padding-top: 3px;
     height: 30px;
   }
+
+  .footer-social a {
+    color: #d3d3d3;
+    font-size: 34px;
+    margin-right: 5px;
+  }
+
   .bottom-nav-list a {
     color: white;
   }
+
   .showing-movie-poster {
     width: 49%;
   }
+
   .now-showing-movie {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
   }
+
   .upcoming-movie-poster {
     width: 24%;
   }
+
   .footer-social-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .footer-social {
     order: 2;
   }
+
   .footer-social-wrapper .logo {
     margin-left: 10px;
     width: 90px;
   }
-  .footer-social a {
-    font-size: 38px;
-    margin-right: 10px;
-  }
+
   .footer-links a {
     font-size: 18px;
   }
@@ -512,6 +508,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
   }
+
   .input-date {
     width: 30%;
   }
@@ -519,10 +516,19 @@ a:hover {
   .pick-multiplex {
     width: 30%;
   }
+
+  .heading-dash {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .showing-movie-poster {
     width: 32%;
+  }
+
+  .footer-social a {
+    font-size: 38px;
+    margin-right: 10px;
   }
 }
