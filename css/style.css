@@ -57,10 +57,6 @@ a:hover {
   color: #d3d3d3;
 }
 
-.nav-item {
-  color: #d3d3d3;
-}
-
 .nav-link {
   margin-left: 5px;
 }
@@ -411,6 +407,49 @@ a:hover {
   border-radius: 10px;
 }
 
+.ceo-msg {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  width: 93%;
+  margin: 10px auto;
+
+  /* border: 1px solid #272a31; */
+  border-radius: 10px;
+}
+
+.profile-pic {
+  align-self: center;
+}
+
+.ceo-msg img {
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.team {
+  width: 93%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.team-member {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.member-pic img {
+  width: 90px;
+  margin-right: 20px;
+}
+
 /* Responsiveness */
 
 .register {
@@ -530,6 +569,22 @@ a:hover {
 
   .heading-dash {
     margin-top: 10px;
+  }
+
+  .ceo-msg {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    width: 49%;
   }
 }
 
