@@ -127,6 +127,21 @@ a:hover {
   text-transform: uppercase;
 }
 
+.hide {
+  display: none;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline img {
+  width: 150px;
+}
+
 .footer-social a {
   color: #d3d3d3;
 }
@@ -509,6 +524,10 @@ a:hover {
     display: inline-block;
     padding-top: 3px;
     height: 30px;
+  }
+
+  .headline {
+    flex-direction: row;
   }
 
   .footer-social a {
