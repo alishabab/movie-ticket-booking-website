@@ -11,8 +11,6 @@ body {
   margin: 0;
   padding: 0;
   color: #272a31;
-
-  /* background-color: rgb(211, 211, 211, 0.2); */
 }
 
 ul {
@@ -30,7 +28,7 @@ a:hover {
   color: #ec5242 !important;
 }
 
-/* Working on header */
+/* Header */
 
 .navbar {
   margin: 0;
@@ -162,7 +160,7 @@ a:hover {
   color: #ec5242;
 }
 
-/* Working on main */
+/* Main */
 
 .text-center {
   text-align: center;
@@ -172,14 +170,8 @@ a:hover {
   width: 95%;
   margin: 0 auto;
   padding-bottom: 20px;
-
-  /* background-color: #d3d3d3; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
-  /* -webkit-box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74);
-  box-shadow: inset 0 7px 5px -1px rgba(0, 0, 0, 0.74); */
 }
 
 .section-heading {
@@ -341,7 +333,7 @@ a:hover {
   box-shadow: inset 0 -1px #ec5242;
 }
 
-/* Working on footer */
+/* Footer */
 
 .footer {
   text-align: center;
@@ -349,7 +341,7 @@ a:hover {
   background-color: white;
 }
 
-/* WORKING ON BOOKINGS PAGE */
+/* Bookings Page */
 
 .heading-dash {
   position: relative;
@@ -421,7 +413,7 @@ a:hover {
   background-color: #ec5242;
 }
 
-/* Working on about */
+/* About Page */
 
 .about-us-text p {
   display: inline-block;
@@ -430,6 +422,29 @@ a:hover {
   padding: 20px;
   border: 1px solid #272a31;
   border-radius: 10px;
+}
+
+.features {
+  background-color: #272a31;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-items {
+  width: 95%;
+  margin: 10px auto;
+  background-color: rgb(211, 211, 211, 0.2);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-items .fas {
+  display: inline-block;
+  font-size: 48px;
+  padding-right: 20px;
 }
 
 .team {
@@ -443,10 +458,6 @@ a:hover {
   padding: 10px;
   margin: 10px auto;
   display: flex;
-
-  /* justify-content: space-between; */
-
-  /* align-items: center; */
   background-color: white;
 }
 
@@ -490,13 +501,37 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.feature-items-wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.partners {
+  background-color: #272a31;
+  color: #d3d3d3;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.partner-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner-wrapper img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
 /* Responsiveness */
 
 .register {
   display: none;
 }
 
-.sign-in {
+.book-btn {
   display: none;
   color: #ec5242;
 }
@@ -524,7 +559,7 @@ a:hover {
     align-items: center;
   }
 
-  .sign-in {
+  .book-btn {
     display: inline-block;
   }
 
@@ -626,6 +661,16 @@ a:hover {
     color: #d3d3d3;
   }
 
+  .about-footer {
+    background-color: white;
+  }
+
+  .about-footer *,
+  .about-footer a,
+  .about-footer small {
+    color: #272a31;
+  }
+
   .date-n-cinema {
     flex-direction: row;
     justify-content: center;
@@ -643,10 +688,24 @@ a:hover {
     margin-top: 10px;
   }
 
-  .ceo-msg {
-    flex-direction: row;
+  .feature-items-wrapper {
+    display: flex;
     justify-content: space-between;
+  }
+
+  .feature-items {
+    flex-direction: column;
+    margin-right: 5px;
+    margin-left: 5px;
     align-items: center;
+  }
+
+  .feature-items * {
+    margin-bottom: 10px;
+  }
+
+  .feature-items .fas {
+    font-size: 30px;
   }
 
   .team {
@@ -672,6 +731,11 @@ a:hover {
 @media only screen and (min-width: 1024px) {
   .showing-movie-poster {
     width: 32%;
+  }
+
+  .feature-items-wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .footer-social a {
