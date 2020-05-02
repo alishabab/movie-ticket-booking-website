@@ -1,5 +1,5 @@
-# HTML/CSS Capstone Project [Solo Project]
-Capstone Project : This project consists of building a responsive website for movie ticket bookings. It has three responsive pages- a Homepage, booking page and an About page.
+# Responsive Movie Ticket Booking Page  [Solo Project]
+This project consists of building a responsive website for movie ticket bookings. It has three responsive pages- a Homepage, booking page and an About page.
 
 > The goal is to make a responsive ticket booking website.
 
