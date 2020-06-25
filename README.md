@@ -18,7 +18,7 @@ The purpose of this project is to create a responsive website to book movie tick
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/alishabab/HTML-CSS-Capstone/feature-branch/index.html)
+[Live Demo Link](https://raw.githack.com/alishabab/HTML-CSS-Capstone/master/index.html)
 
 ## Getting Started
 
