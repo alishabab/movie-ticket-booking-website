@@ -6,7 +6,7 @@ I have used CSS flexbox to make the pages responsive
 ![screenshot](screenshot.PNG)
 
 >Medium and small screens
-![screenshot](screenshot_2.PNG)
+![screenshot](screenshot_2.png)
 
 The purpose of this project is to create a responsive website to book movie tickets.
 
